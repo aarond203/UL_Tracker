@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ul_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/university_of_limerick_logo"
+        android:padding="15dp"
+        app:srcCompat="@drawable/ul_logo_white_2" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-235dp"
+        android:fontFamily="@font/eb_garamond_08_regular"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/login_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:fontFamily="@font/eb_garamond_08_regular"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/stud_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="265dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/stud_ID"
+        android:inputType="number"
+        android:maxLength="8"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/stud_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stud_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-265dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="@string/stud_pass"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="155dp"
+        android:background="@drawable/sign_in_btn"
+        android:fontFamily="@font/eb_garamond_08_regular"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/not_registered_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reg_button"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/eb_garamond_08_regular"
+        android:text="@string/not_registered"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/sign_in_btn"
+        android:fontFamily="@font/eb_garamond_08_regular"
+        android:text="@string/reg"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
