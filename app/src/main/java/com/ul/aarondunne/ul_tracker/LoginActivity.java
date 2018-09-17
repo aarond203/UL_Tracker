@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         final EditText studPassword = findViewById(R.id.stud_pass);
 
         final Button loginButton = findViewById(R.id.login_button);
-        final TextView notRegisteredLink = findViewById(R.id.not_registered_link);
+        final Button registerButton = findViewById(R.id.reg_button);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,7 +33,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        notRegisteredLink.setOnClickListener(new View.OnClickListener() {
+        registerButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
